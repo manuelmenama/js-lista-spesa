@@ -20,3 +20,11 @@ const shopList = [
 
 const lista = document.querySelector('ul');
 
+for (let i = 0; i < shopList.length; i++){
+
+ let newListItem = document.createElement("li");
+ lista.append(newListItem);
+
+ newListItem.innerHTML = shopList[i];
+  
+}
