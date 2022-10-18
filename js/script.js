@@ -1,3 +1,4 @@
+//dichiarazione delle variabili
 const shopList = [
   'carbone per il gas e la siderurgia 6000000 t',
   'acciaio 2000000 t',
@@ -18,6 +19,7 @@ const shopList = [
   'titanio 400 t',
 ];
 
+// in lista salvo l'elemento ul
 const lista = document.querySelector('ul');
 
 // for (let i = 0; i < shopList.length; i++){
@@ -29,13 +31,17 @@ const lista = document.querySelector('ul');
   
 // }
 
+//condizione di partenza per il ciclo while
 let c = 0;
 
+//condizione di stop per il ciclo while
 while (c < shopList.length) {
 
+  //creo elementi li all'interno di ul
   let newListItem = document.createElement("li");
   lista.append(newListItem);
-
+  //scrivo aoll'interno di ogni il
   newListItem.innerHTML = shopList[c];
+  //incremento del contatore
   c++;
 }
